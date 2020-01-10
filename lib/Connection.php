@@ -139,7 +139,7 @@ class Connection
         return true;
     }
 
-    public function item(): ?array
+    public function item()
     {
         $item = $this->items();
         return isset($item[0]) ? $item[0] : null;
