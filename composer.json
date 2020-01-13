@@ -2,6 +2,7 @@
   "name":"webneft/soap",
   "version":"1.0.0",
   "extra": {
+    "installer-types": ["bitrix-d7-module"],
     "installer-paths": {
       "local/modules/{$name}/": ["type:bitrix-d7-module"]
     }
