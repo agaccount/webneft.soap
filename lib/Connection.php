@@ -2,8 +2,6 @@
 
 namespace Webneft\Soap;
 
-use mysql_xdevapi\DatabaseObject;
-use Webneft\Soap\Module;
 use Webneft\Soap\Exception\SoapClientException;
 use Bitrix\Main\Config\Configuration as BitrixConfig;
 
