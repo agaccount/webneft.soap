@@ -1,7 +1,6 @@
 {
   "name":"webneft/soap",
   "version":"1.0.0",
-  "type": "bitrix-d7-module",
   "require":{
     "php":">=7.2",
     "monolog/monolog": "1.23",
@@ -9,7 +8,7 @@
   },
   "extra": {
     "installer-paths": {
-      "local/modules/{$name}/": ["type:bitrix-d7-module"]
+      "local/modules": ["type:bitrix-d7-module"]
     }
   }
 }
