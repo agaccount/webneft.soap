@@ -6,6 +6,6 @@ Loader::registerAutoLoadClasses('webneft.soap',
         'Webneft\Soap\Module' => 'lib/Module.php',
         'Webneft\Soap\Connection' => 'lib/Connection.php',
         'Webneft\Soap\Exception\AppException' => 'lib/Exception/AppException.php',
-        'Webneft\Soap\Exception\SoapClientException' => 'lib/Exception/WebsocketClientException.php'
+        'Webneft\Soap\Exception\SoapClientException' => 'lib/Exception/SoapClientException.php'
     )
 );
