@@ -3,7 +3,6 @@
   "extra": {
     "installer-name": "webneft.soap"
   },
-  "version":"1.0.0",
   "type": "bitrix-d7-module",
   "require":{
     "php":">=7.2",
