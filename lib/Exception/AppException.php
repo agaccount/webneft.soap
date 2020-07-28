@@ -174,20 +174,13 @@ class AppException extends Exception
         }
 
         // Отправка в slack
-        if (Loader::includeModule('dk.bot')) {
-            try {
-                $bot = new \Dk\Bot\Controller();
-                $bot->send([
-                    'channel' => 'bear',
-                    'title' => $title,
-                    'text' => $text,
-                    'url' => "",
-                    'fields' => $fields
-                ]);
-            } catch (\Exception $e) {
-
-                // todo: handle
-            }
+        if (Loader::includeModule('webneft.bot')) {
+            slack('bear')->send([
+                'title' => $title,
+                'text' => $text,
+                'url' => "",
+                'fields' => $fields
+            ]);
         }
     }
 
