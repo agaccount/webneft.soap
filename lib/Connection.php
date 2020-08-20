@@ -155,7 +155,11 @@ class Connection
                 $items = [$items];
             }
         } elseif (isset($result['return'])) {
-            $items = [$result['return']];
+            if (is_array($result['return']) && empty($result['return'])) {
+                $items = $result['return'];
+            } else {
+                $items = [$result['return']];
+            }
         }
 
         return $items;
