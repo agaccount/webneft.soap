@@ -165,7 +165,7 @@ class Connection
         return $items;
     }
 
-    public function result(): ?object
+    public function result()
     {
         return $this->result;
     }
